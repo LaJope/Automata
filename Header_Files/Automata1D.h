@@ -1,25 +1,20 @@
 #pragma once
-#include "my_utils.h"
 #include <string>
 #include <vector>
 
-class Automata {
+class Automata1D {
 private:
   struct M {
-    std::vector<bool> state;
     std::string ruleSet;
+    std::vector<bool> state;
   } m;
-  explicit Automata(M new_m) : m(std::move(new_m)) {}
-
+  explicit Automata1D(M new_m) : m(std::move(new_m)) {}
   int calculateState(int left, int middle, int right);
 
 public:
-  static Automata create(std::string &&start_ruleSet = "00000000",
+  static Automata1D create(std::string &&start_ruleSet = "00000000",
                          std::vector<bool> &&start_state = {0});
-  const std::vector<bool> &getState() const;
   void newState();
-
   void set(int index, bool value);
-
-  friend void terminalAutomata();
+  const std::vector<bool> &getState() const;
 };

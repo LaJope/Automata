@@ -1,0 +1,5 @@
+
+[EXECUTE]: cmake --build /home/lajope/projects/Cxx/CellularAutomata/out/Debug --target CellularAutomata
+[EXECUTE]: cmake -B /home/lajope/projects/Cxx/CellularAutomata/out/Debug -S . -D CMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+[EXECUTE]: cmake --build /home/lajope/projects/Cxx/CellularAutomata/out/Debug --target CellularAutomata
+[EXECUTE]: cmake --build /home/lajope/projects/Cxx/CellularAutomata/out/Debug --target CellularAutomata
